@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align:center;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    h2{
+        text-align:center;
+    }
+    p{
+        text-align:center;
+        font-size: 20px;
+    }
+    li.list{
+        text-align:center;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <h1>4. SYSTEM IMPLEMENTATION & METHODOLOGIES</h1>
+    <img src="./sample_code.jpeg"/>
+    <h2>Code For Sentiment Score:</h2>
+    <ul>
+        <li class="list">Here we use syuzhet library for calculate positive and negative score:</li>
+        <p>library(syuzhet) s <-<br>
+            get_nrc_sentiment(sentiment_d<br>
+            ata) s[1:20,] s$score <-<br>
+            s$positive - s$negative s[1:20,] <br>
+            write.csv(x = s, file = "C:\\mini <br>
+            project\\hwip_2.csv") <br>
+            review_score <- colSums(s[,]) <br>
+            print(review_score)</li>
+        </p>
+
+    </ul>
+</body>
+</html>
